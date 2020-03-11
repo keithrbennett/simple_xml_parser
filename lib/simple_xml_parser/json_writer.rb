@@ -1,6 +1,6 @@
 require 'json'
 
-module FideXmlParser
+module SimpleXmlParser
 
 class JsonWriter
 

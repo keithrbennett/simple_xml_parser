@@ -1,7 +1,7 @@
 require 'awesome_print'
 require 'nokogiri'
 
-module FideXmlParser
+module SimpleXmlParser
 
 # A field_name_renames hash can be provided.
 # Keys are the field names in the XML input, values are the names in the output JSON, e.g.:
@@ -23,7 +23,7 @@ module FideXmlParser
 # processor.record_filter = ->(rec) { rec.title }
 # If a field name has been changed via the field_name_renames hash, the new name should be used in the filter.
 
-class SimpleStreamingXmlParser < Nokogiri::XML::SAX::Document
+class Parser < Nokogiri::XML::SAX::Document
 
   attr_reader :start_time
 
